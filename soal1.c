@@ -38,7 +38,7 @@ void postorder(int arr[], int i, int N){
     printf("%d", arr[i]);
 }
 
-int main(){
+int main() {
     int N;
     scanf("%d", &N);
 
@@ -51,15 +51,12 @@ int main(){
 
     printf("PRE"); 
     preorder(arr,0, N);
-    printf("\n");
 
-    printf("IN");
+    printf("\nIN");
     inorder(arr,0, N);
-    printf("\n");
 
-    printf("POST");
+    printf("\nPOST");
     postorder(arr,0, N);
-    printf("\n");
 
     return 0;
  }
