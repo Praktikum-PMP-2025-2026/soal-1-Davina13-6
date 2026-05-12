@@ -8,34 +8,34 @@
 
 #include <stdio.h>
 
-void preorder(int arr[], int i, int N){
+void preorder(int arr[], int N, int i){
     if(i >= N){
         return;
     } 
 
-    printf("%d", arr[i]);
-    preorder(arr, 2*i+1, N);
-    preorder(arr, 2*i+2, N);
+    printf(" %d", arr[i]);
+    preorder(arr,N,2*i+1);
+    preorder(arr,N,2*i+2);
 }
 
-void inorder(int arr[], int i, int N){
+void inorder(int arr[], int N, int i){
     if(i >= N){
         return;
     }
 
-    inorder(arr,i , 2*i+1);
-    printf("%d", arr[i]);
-    inorder(arr,i , 2*i+2);
+    inorder(arr,N,2*i+1);
+    printf(" %d",arr[i]);
+    inorder(arr,N,2*i+2);
 }
 
-void postorder(int arr[], int i, int N){
+void postorder(int arr[], int N, int i){
     if (i >= N){
         return;
     }
 
-    postorder(arr,i ,2*i+1);
-    postorder(arr,i ,2*i+2);
-    printf("%d", arr[i]);
+    postorder(arr,N,2*i+1);
+    postorder(arr,N,2*i+2);
+    printf(" %d",arr[i]);
 }
 
 int main() {
@@ -57,7 +57,7 @@ int main() {
     inorder(arr,0, N);
     printf("\n");
 
-    printf("\nPOST");
+    printf("POST");
     postorder(arr,0, N);
     printf("\n");
 
