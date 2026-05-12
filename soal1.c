@@ -51,15 +51,15 @@ int main() {
 
     printf("PRE"); 
     preorder(arr,0, N);
-    printf("\n);
+    printf("\n");
 
     printf("IN");
     inorder(arr,0, N);
-    printf("\n);
+    printf("\n");
 
-    printf("POST");
+    printf("\nPOST");
     postorder(arr,0, N);
-    printf("\n);
-    
+    printf("\n");
+
     return 0;
  }
