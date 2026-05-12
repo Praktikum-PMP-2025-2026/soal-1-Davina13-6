@@ -3,7 +3,7 @@
  *   Hari dan Tanggal    : Selasa, 12 Mei 2026
  *   Nama (NIM)          : Davina Alya Shakira (13224081)
  *   Nama File           : soal1.c
- *   Deskripsi           : Program untuk menampilkan ketiga urutan pembacaan dari representasi pohon yang diberikan (silsilah keluarga bangsawan) dengan mencetek etak preorder, inorder, dan postorder dari tree lengkap
+ *   Deskripsi           : Program untuk menampilkan ketiga urutan pembacaan dari representasi pohon yang diberikan (silsilah keluarga bangsawan) dengan mencetek preorder, inorder, dan postorder dari tree lengkap
 **/
 
 #include <stdio.h>
